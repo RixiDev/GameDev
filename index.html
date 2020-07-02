@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RixiDev</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="logo"><a href="index.html">RicsiDev</a></li>
+                <li><a class="pages" href="index.html">Home</a></li>
+                <li><a class="pages" href="games.html">Games</a></li>
+                <li><a class="pages" href="codes.html">Codes</a></li>
+                <li><a class="pages" href="contact.html">Contacts</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section>
+        <div class="home">Indie Game Developer</div>
+        <a class="button" href="#moreText">Learn More</a>
+    </section>
+
+    <section>
+        <div id="moreText" class="learnMore">Hello!</div>
+        
+        <nav class="myself">
+            <p>My name is Richard, I'm a 15 year old student.</p>
+            <p>I'm currently learning programming on my own,</p>
+            <p>and making several types of games and programs.</p>
+        </nav>
+
+        <ul class="endButton">
+            <li><a href="games.html">Games</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+            <li><a href="codes.html">Codes</a></li>
+        </ul>
+    </section>
+
+    <script>
+        $('.button').on('click', function() {  
+        $('html, body').animate({scrollTop: $(this.hash).offset().top - 50}, 1000);
+        return false;
+        });
+    </script>
+
+    <footer>
+        © 2020 RixiDev
+    </footer>
+</body>
+</html>
